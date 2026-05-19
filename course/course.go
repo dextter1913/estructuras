@@ -5,7 +5,7 @@ import "fmt"
 type Course struct {
 	Name    string
 	Price   float64
-	isFree  bool
+	IsFree  bool
 	UserIDs []uint
 	Clases  map[uint]string
 }
