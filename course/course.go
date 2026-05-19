@@ -3,23 +3,21 @@ package course
 import "fmt"
 
 type course struct {
-	Name    string
-	Price   float64
-	IsFree  bool
+	name    string
+	price   float64
+	isFree  bool
 	UserIDs []uint
 	Clases  map[uint]string
 }
 
-func New(name string, price float64, isFree bool, userIds []uint, clases map[uint]string) *course {
+func New(name string, price float64, isFree bool) *course {
 	if price == 0 {
 		price = 30
 	}
 	return &course{
-		Name:    name,
-		Price:   price,
-		IsFree:  isFree,
-		UserIDs: userIds,
-		Clases:  clases,
+		name:    name,
+		price:   price,
+		isFree:  isFree,
 	}
 }
 
@@ -33,5 +31,5 @@ func (c *course) PrintClasses() {
 }
 
 func (c *course) ChangePrice(price float64) {
-	c.Price = price
+	c.price = price
 }

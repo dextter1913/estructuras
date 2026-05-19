@@ -22,13 +22,16 @@ func main() {
 		"Go desde Cero",
 		12.34,
 		false,
-		[]uint{12, 56, 89},
-		map[uint]string{
-			1: "Introduccion",
-			2: "Estructuras",
-			3: "Maps",
-		},
 	)
+
+	Go.UserIDs = []uint{12, 56, 89}
+	Go.Clases = map[uint]string{
+		1: "Introduccion",
+		2: "Estructuras",
+		3: "Maps",
+	}
+
+	
 	// Go := course.NewCourse{
 	// 	name: "Go desde Cero",
 	// 	price: 12.34,
