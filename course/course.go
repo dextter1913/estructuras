@@ -10,7 +10,7 @@ type course struct {
 	Clases  map[uint]string
 }
 
-func NewCourse(name string, price float64, isFree bool, userIds []uint, clases map[uint]string) *course {
+func New(name string, price float64, isFree bool, userIds []uint, clases map[uint]string) *course {
 	if price == 0 {
 		price = 30
 	}

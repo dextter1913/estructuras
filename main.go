@@ -18,7 +18,7 @@ func main() {
 	// 	},
 	// }
 
-	Go := course.NewCourse(
+	Go := course.New(
 		"Go desde Cero",
 		12.34,
 		false,
