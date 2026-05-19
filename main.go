@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/dextter1913/estructuras/course"
+)
 
 func main() {
 	// Go := Course{
@@ -15,7 +18,7 @@ func main() {
 	// 	},
 	// }
 
-	Go := &Course{
+	Go := &course.Course{
 		"Go desde Cero",
 		12.34,
 		false,
